@@ -42,7 +42,7 @@ Edit `.codex/config.toml`:
 
 ```toml
 model = "gpt-6-astra"
-model_reasoning_effort = "low"
+model_reasoning_effort = "ultra"
 
 [agents]
 enabled = true
@@ -50,6 +50,11 @@ max_concurrent_threads_per_session = 4
 default_subagent_model = "gpt-5.6-luna"
 default_subagent_reasoning_effort = "medium"
 ```
+
+The Pro preset uses `ultra` reasoning and enables `multi_agent_v2` so the root
+can create observable child threads through the collaboration tools. A final
+answer that merely names a child without a spawn receipt is not an executed
+subagent.
 
 `.codex/config.plus.toml` is the same file with a Luna root:
 

@@ -33,3 +33,7 @@ max_concurrent_threads_per_session = 4
 # Default for any spawned subagent that does not explicitly choose a model.
 default_subagent_model = "gpt-5.6-luna"
 default_subagent_reasoning_effort = "medium"
+
+# Keep child-thread creation enabled for the v2 collaboration protocol.
+[features]
+multi_agent_v2 = true

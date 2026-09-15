@@ -19,8 +19,11 @@ them into `~/.codex/config.toml` for a personal/global setup:
 
 ```toml
 model = "gpt-6-astra"
-model_reasoning_effort = "medium"
+model_reasoning_effort = "ultra"
 service_tier = "fast"
+
+[features]
+multi_agent_v2 = true
 
 [agents]
 enabled = true
