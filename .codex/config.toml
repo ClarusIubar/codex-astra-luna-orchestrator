@@ -14,7 +14,7 @@
 
 # Root / orchestrator
 model = "gpt-6-astra"
-model_reasoning_effort = "low"
+model_reasoning_effort = "ultra"
 
 # Safe interactive defaults. Change if your workflow needs otherwise.
 approval_policy = "on-request"
@@ -30,3 +30,7 @@ max_concurrent_threads_per_session = 4
 # Default for any spawned subagent that does not explicitly choose a model.
 default_subagent_model = "gpt-5.6-luna"
 default_subagent_reasoning_effort = "medium"
+
+# The v2 collaboration tools are required for real child-thread creation.
+[features]
+multi_agent_v2 = true
